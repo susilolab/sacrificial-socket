@@ -6,7 +6,7 @@
         "websocket",
         "client-side"
     ],
-    "homepage": "https://github.com/raz-varren/sacrificial-socket",
+    "homepage": "https://github.com/susilolab/sacrificial-socket",
     "license": "MIT",
     "files": [
         "sacrificial-socket.js",

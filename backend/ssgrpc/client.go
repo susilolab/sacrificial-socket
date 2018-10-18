@@ -1,7 +1,7 @@
 package ssgrpc
 
 import (
-	"github.com/raz-varren/sacrificial-socket/backend/ssgrpc/transport"
+	"github.com/susilolab/sacrificial-socket/backend/ssgrpc/transport"
 	"google.golang.org/grpc"
 	//"sync"
 )

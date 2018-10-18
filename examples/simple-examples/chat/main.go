@@ -5,9 +5,10 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/raz-varren/log"
-	ss "github.com/raz-varren/sacrificial-socket"
 	"net/http"
+
+	"github.com/raz-varren/log"
+	ss "github.com/susilolab/sacrificial-socket"
 )
 
 func main() {

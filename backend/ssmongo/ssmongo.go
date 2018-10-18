@@ -5,13 +5,14 @@ package ssmongo
 
 import (
 	"encoding/json"
-	"github.com/raz-varren/log"
-	ss "github.com/raz-varren/sacrificial-socket"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 	"io"
 	"sync"
 	"time"
+
+	"github.com/raz-varren/log"
+	ss "github.com/susilolab/sacrificial-socket"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 //MMHB implements ss.MultihomeBackend and uses MongoDB to syncronize between

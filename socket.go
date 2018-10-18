@@ -4,9 +4,10 @@ import (
 	"bytes"
 	"encoding/base64"
 	"encoding/json"
+	"sync"
+
 	"github.com/gorilla/websocket"
 	"github.com/raz-varren/log"
-	"sync"
 )
 
 var (

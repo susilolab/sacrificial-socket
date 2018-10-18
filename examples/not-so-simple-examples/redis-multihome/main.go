@@ -6,12 +6,13 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"github.com/go-redis/redis"
-	"github.com/raz-varren/log"
-	"github.com/raz-varren/sacrificial-socket"
-	"github.com/raz-varren/sacrificial-socket/backend/ssredis"
 	"net/http"
 	"os"
+
+	"github.com/go-redis/redis"
+	"github.com/raz-varren/log"
+	"github.com/susilolab/sacrificial-socket"
+	"github.com/susilolab/sacrificial-socket/backend/ssredis"
 )
 
 type roomcast struct {

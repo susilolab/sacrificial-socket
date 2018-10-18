@@ -6,12 +6,13 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"github.com/raz-varren/log"
-	"github.com/raz-varren/sacrificial-socket"
-	"github.com/raz-varren/sacrificial-socket/backend/ssgrpc"
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/raz-varren/log"
+	"github.com/susilolab/sacrificial-socket"
+	"github.com/susilolab/sacrificial-socket/backend/ssgrpc"
 	//"time"
 )
 

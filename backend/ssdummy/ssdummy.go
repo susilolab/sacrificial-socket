@@ -2,9 +2,10 @@
 package ssdummy
 
 import (
-	"github.com/raz-varren/log"
-	ss "github.com/raz-varren/sacrificial-socket"
 	"time"
+
+	"github.com/raz-varren/log"
+	ss "github.com/susilolab/sacrificial-socket"
 )
 
 //DummyMHB is a mockup multihome backend that satisfies the ss.MultihomeBackend interface.

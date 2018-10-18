@@ -5,9 +5,10 @@ package ssredis
 
 import (
 	"encoding/hex"
+
 	"github.com/go-redis/redis"
 	"github.com/raz-varren/log"
-	ss "github.com/raz-varren/sacrificial-socket"
+	ss "github.com/susilolab/sacrificial-socket"
 )
 
 var (

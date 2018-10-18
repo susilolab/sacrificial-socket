@@ -2,10 +2,11 @@ package ss_test
 
 import (
 	"encoding/json"
-	"github.com/raz-varren/sacrificial-socket"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/susilolab/sacrificial-socket"
 )
 
 func ExampleNewServer() {

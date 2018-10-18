@@ -5,16 +5,17 @@ package ssgrpc
 
 import (
 	"encoding/json"
-	"github.com/raz-varren/log"
-	ss "github.com/raz-varren/sacrificial-socket"
-	"github.com/raz-varren/sacrificial-socket/backend/ssgrpc/transport"
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"net"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/raz-varren/log"
+	ss "github.com/susilolab/sacrificial-socket"
+	"github.com/susilolab/sacrificial-socket/backend/ssgrpc/transport"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 //GRPCMHB... yep that's what I'm calling it. All you need to know is that GRPCMHB

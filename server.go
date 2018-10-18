@@ -8,8 +8,6 @@ Sacrificial-Socket also has a MultihomeBackend interface for syncronizing broadc
 package ss
 
 import (
-	"github.com/gorilla/websocket"
-	"github.com/raz-varren/log"
 	"io"
 	"net/http"
 	"os"
@@ -17,6 +15,9 @@ import (
 	"strings"
 	"sync"
 	"syscall"
+
+	"github.com/gorilla/websocket"
+	"github.com/raz-varren/log"
 )
 
 const ( //                        ASCII chars
@@ -189,7 +190,7 @@ func (serv *SocketServer) loop(ws *websocket.Conn) {
 
 	defer s.Close()
 
-	s.Join("__socket_id:"+s.ID())
+	s.Join("__socket_id:" + s.ID())
 
 	serv.l.RLock()
 	e := serv.onConnectFunc

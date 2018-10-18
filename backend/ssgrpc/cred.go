@@ -1,11 +1,12 @@
 package ssgrpc
 
 import (
-	"github.com/raz-varren/log"
-	"github.com/raz-varren/sacrificial-socket/backend/ssgrpc/token"
-	"golang.org/x/net/context"
 	"sync"
 	"time"
+
+	"github.com/raz-varren/log"
+	"github.com/susilolab/sacrificial-socket/backend/ssgrpc/token"
+	"golang.org/x/net/context"
 )
 
 type perRPCCreds struct {
