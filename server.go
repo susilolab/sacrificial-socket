@@ -35,6 +35,7 @@ type event struct {
 
 //SocketServer manages the coordination between
 //sockets, rooms, events and the socket hub
+//add my own custom field
 type SocketServer struct {
 	hub              *socketHub
 	events           map[string]*event
