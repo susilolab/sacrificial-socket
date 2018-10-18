@@ -42,6 +42,7 @@ type SocketServer struct {
 	onDisconnectFunc func(*Socket)
 	l                *sync.RWMutex
 	upgrader         *websocket.Upgrader
+	UserID           string
 }
 
 //NewServer creates a new instance of SocketServer
@@ -139,6 +140,8 @@ func (serv *SocketServer) WebHandler() http.Handler {
 
 //ServeHTTP will upgrade a http request to a websocket using the sac-sock subprotocol
 func (serv *SocketServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	query := r.URL.Query()
+	serv.UserID = query.Get("uid")
 	ws, err := serv.upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Err.Println(err)

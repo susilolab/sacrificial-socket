@@ -23,6 +23,7 @@ type Socket struct {
 	serv   *SocketServer
 	roomsl *sync.RWMutex
 	rooms  map[string]bool
+	UserID string
 }
 
 const (
@@ -42,6 +43,7 @@ func newSocket(serv *SocketServer, ws *websocket.Conn) *Socket {
 		serv:   serv,
 		roomsl: &sync.RWMutex{},
 		rooms:  make(map[string]bool),
+		UserID: serv.UserID,
 	}
 	serv.hub.addSocket(s)
 	return s
